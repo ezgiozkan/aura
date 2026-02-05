@@ -17,7 +17,7 @@ struct HomeView: View {
     @State private var shouldOpenLanguageAfterSettingsDismiss = false
     @State private var languageSearchText = ""
     @State private var showPaywall = false
-
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -38,9 +38,9 @@ struct HomeView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(maxWidth: 1000)
-                            .offset(y: -70)
+                            .offset(y: -40)
 
-                        VStack(spacing: 12) {
+                        VStack(spacing: 8) {
                             Text("For accurate analysis, you can upload screenshots directly from WhatsApp, Instagram DMs, Telegram, iMessage, and more.")
                                 .font(.system(size: 14, weight: .regular))
                                 .foregroundStyle(.secondary)
